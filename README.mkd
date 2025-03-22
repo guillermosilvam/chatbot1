@@ -1,0 +1,34 @@
+# Clone
+```bash
+git clone https://github.com/guillermosilvam/chatbot1.git
+```
+
+# Create VENV
+```bash
+python -m venv chatbot_venv
+```
+
+# Act env
+
+**window**
+```bash
+chatbot_venv/Scripts/activate
+```
+
+**linux**
+```bash
+source chatbot_venv/Scripts/activate
+```
+
+
+# Install depn
+
+```bash
+pip install -r requirements.txt
+```
+
+# Run pro...
+
+```bash
+fastapi dev main.py
+```
