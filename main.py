@@ -90,11 +90,9 @@ class Bot(BaseModel):
 @app.post(
         "/prompt",
         )
-def create_prompt(prompt: Bot) -> dict:
+def create_prompt(prompt: Bot):
     user_prompt = prompt.model_dump()
-    
-    return {
-        "messages": "succesfully created prompt",
-        "data": user_prompt
-    }
+    response = model.invoke("hola como estas?")
+    print(response)
+    return 
 
